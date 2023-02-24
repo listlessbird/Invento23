@@ -95,6 +95,41 @@ $primary-font-color: #ffffff !global;
 
     @media (max-width: $breakpoint-large-tablet) {
       flex-direction: row-reverse;
+      padding: 16px 0px;
+
+      .contact {
+        display: flex;
+
+        .contact__link {
+          display: flex;
+          align-items: center;
+
+          a {
+            text-decoration: none;
+
+            p {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 17px;
+              text-decoration: none;
+              color: #{$primary-font-color};
+            }
+          }
+        }
+      }
+
+      .central__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 32px;
+        }
+      }
 
       .register {
         display: none;
