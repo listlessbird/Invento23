@@ -1,0 +1,40 @@
+//devices
+$breakpoint-large-tablet: 768px;
+$breakpoint-mobile: 450px;
+
+.invento__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 20.272rem;
+    height: 20.272rem;
+
+    @media screen and (max-width: $breakpoint-large-tablet) {
+      width: 11.44rem;
+      height: 11.44rem;
+    }
+    // 114.46px
+
+    margin: 0 auto;
+
+    @media screen and (max-width: $breakpoint-large-tablet) {
+      margin-right: 12rem;
+    }
+
+    @media screen and (max-width: $breakpoint-large-tablet) {
+      margin-right: 0px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

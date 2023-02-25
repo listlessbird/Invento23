@@ -3,6 +3,7 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "typeRoots": ["./src/@types", "./node_modules/@types"],
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": false,
@@ -16,6 +17,7 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
+  "files": ["globals.d.ts"],
+  "include": ["src", "src/components", "src/custom.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

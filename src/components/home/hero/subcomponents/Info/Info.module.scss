@@ -1,0 +1,27 @@
+//devices
+$breakpoint-large-tablet: 768px;
+$breakpoint-mobile: 450px;
+
+.info__main {
+  display: flex;
+  width: 100%;
+
+  p {
+    font-family: "Chakra Petch";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: right;
+    color: #ffffff;
+
+    @media screen and (max-width: $breakpoint-large-tablet) {
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      text-align: left;
+    }
+  }
+}

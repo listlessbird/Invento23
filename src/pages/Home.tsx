@@ -5,15 +5,13 @@ import Hero from "../components/home/hero/Hero";
 import Navbar from "../components/home/navbar/Navbar";
 
 //styles
-import "./Home.scss";
-import Countdown from "../components/countdown/countdown";
+import styles from "./Home.module.scss";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className={styles.home}>
       <Navbar />
-      {/* <Hero /> */}
-      <Countdown />
+      <Hero />
     </div>
   );
 };

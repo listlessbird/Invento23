@@ -1,0 +1,85 @@
+//devices
+$breakpoint-large-tablet: 768px;
+$breakpoint-mobile: 450px;
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow: hidden;
+
+  margin: 0 auto;
+  margin-bottom: 6rem;
+
+  background: url("../../../assets/images/gec__image__outline.png") no-repeat;
+  background-position: right bottom;
+  // background-size: ;
+
+  > .hero__responsive__flex {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      flex-direction: column-reverse;
+    }
+
+    > .invento__label {
+      display: flex;
+
+      @media screen and (max-width: $breakpoint-large-tablet) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+    > .countdown__info__flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      // align-items: center;
+      width: 100%;
+
+      @media screen and (max-width: $breakpoint-mobile) {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 4rem;
+      }
+
+      > .countdown__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        > .countdown__title {
+          display: flex;
+          width: 100%;
+
+          h4 {
+            font-family: "Chakra Petch";
+            font-style: italic;
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 4rem;
+            color: #ffd600;
+          }
+        }
+      }
+
+      > .info__container {
+        display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        min-width: 26rem;
+
+        @media screen and (max-width: $breakpoint-large-tablet) {
+          min-width: 0;
+        }
+
+        @media screen and (max-width: $breakpoint-mobile) {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

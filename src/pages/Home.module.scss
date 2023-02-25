@@ -1,0 +1,20 @@
+//devices
+$breakpoint-large-tablet: 768px;
+
+body {
+  background: url("../assets/images/bg.png") no-repeat, #000;
+  background-size: cover;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+
+  background: url("../assets/images/hero__main__bg.png") no-repeat;
+  background-position: right top;
+  background-size: 79rem 100%;
+
+  @media (max-width: $breakpoint-large-tablet) {
+    background-size: cover;
+  }
+}
