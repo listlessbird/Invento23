@@ -1,0 +1,39 @@
+$box-color: #ffd600;
+
+.countdown__container {
+    display: flex;
+    font-family: "Libre Franklin";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2.4rem;
+    color: #fff;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.countdown__box {
+    min-width: 8.1rem;
+    border: 2px solid $box-color;
+    text-align: center;
+    padding-block: 0.5em;
+    padding-inline: 0.4em;
+    transform: skew(-7deg, 0deg);
+    font-size: 3.5rem;
+    > .countdown__text {
+        font-weight: 500;
+    }
+}
+
+.countdown__box__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.countdown__title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    align-self: center;
+}
