@@ -6,12 +6,14 @@ import Navbar from "../components/home/navbar/Navbar";
 
 //styles
 import "./Home.scss";
+import Countdown from "../components/countdown/countdown";
 
 const Home = () => {
   return (
     <div className="home">
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
+      <Countdown />
     </div>
   );
 };
