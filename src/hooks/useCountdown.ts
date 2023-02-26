@@ -15,7 +15,7 @@ export function useCountdown(target: string) {
         seconds: '00'
     })
 
-    let intervalRef = useRef(0)
+    let intervalRef = useRef<ReturnType<typeof setInterval> | number>(0)
 
     function startTimer(target: string) {
 

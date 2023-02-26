@@ -1,7 +1,7 @@
 import { useCountdown } from "../../hooks"
 import styles from "./countdown.module.scss"
 export default function Countdown() {
-  const { days, hours, minutes, seconds } = useCountdown("26 Feb 2023 12:00:00")
+  const { days, hours, minutes, seconds } = useCountdown("27 Feb 2023 12:00:00")
 
   const countdown = [
     {
