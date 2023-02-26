@@ -1,9 +1,7 @@
-import { useCountdown } from "../../../hooks";
-import styles from "./countdown.module.scss";
+import { useCountdown } from "../../hooks"
+import styles from "./countdown.module.scss"
 export default function Countdown() {
-  const { days, hours, minutes, seconds } = useCountdown(
-    "26 Feb 2023 12:00:00"
-  );
+  const { days, hours, minutes, seconds } = useCountdown("26 Feb 2023 12:00:00")
 
   const countdown = [
     {
@@ -30,8 +28,8 @@ export default function Countdown() {
         </div>
         <span className={styles.countdown__title}>{cd.title}</span>
       </div>
-    );
-  });
+    )
+  })
 
-  return <div className={styles.countdown__container}>{countdown}</div>;
+  return <div className={styles.countdown__container}>{countdown}</div>
 }

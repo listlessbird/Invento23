@@ -10,14 +10,13 @@ body {
   display: flex;
   flex-direction: column;
 
-  background: url("../assets/images/hero__main__bg.png") no-repeat;
+  // background: url("../assets/images/hero__main__bg.png") no-repeat;
   background-position: right top;
   background-size: 79rem 100%;
 
   @media (max-width: $breakpoint-large-tablet) {
     background-size: cover;
-    background: linear-gradient(0deg, #414141, #000000, 0.6),
-      url("../assets/images/hero__main__bg.png") no-repeat;
+    background: linear-gradient(0deg, #414141, #000000, 0.5), url("../assets/images/hero__main__bg.png") no-repeat;
     background-position: right top;
   }
 }
