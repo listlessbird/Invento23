@@ -1,15 +1,24 @@
+@import "../../scss/mixins";
 //devices
 $breakpoint-large-tablet: 768px;
 //colors
 $primary-font-color: #ffffff;
 
 .navbar {
-  width: 90vw;
+  width: 95vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  z-index: 999;
+
+  @include bp(desktop) {
+    left: 1%;
+  }
 
   .navbar__sub {
     display: flex;
@@ -23,7 +32,7 @@ $primary-font-color: #ffffff;
 
     margin-top: 16px;
     padding: 18.5px 0px;
-
+    // position: absolute;
     .contact {
       display: flex;
 

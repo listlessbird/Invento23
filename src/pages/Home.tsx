@@ -1,19 +1,18 @@
-import React from "react";
-import Hero from "../components/home/hero/Hero";
-
+import Hero from "../Sections/Hero"
 //components
-import Navbar from "../components/home/navbar/Navbar";
+import Navbar from "../components/navbar/Navbar"
 
 //styles
-import styles from "./Home.module.scss";
+import styles from "./Home.module.scss"
 
 const Home = () => {
   return (
-    <div className={styles.home}>
+    <>
+      <div className={styles.home}></div>
       <Navbar />
       <Hero />
-    </div>
-  );
-};
+    </>
+  )
+}
 
-export default Home;
+export default Home

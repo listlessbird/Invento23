@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
 //styles
-import "./Navbar.scss";
+import "./Navbar.scss"
 
 //images
-import logo from "../../../assets/images/logo.png";
+import logo from "../../assets/images/logo.png"
 
 const Navbar = () => {
   return (
@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
