@@ -22,10 +22,19 @@
     z-index: 10;
     margin-top: -9.9rem;
 
-    background-image: url("../../assets/images/hero__main__bg.png");
-    background-position: right bottom;
-    background-size: cover;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        linear-gradient(0deg, #6b0938, #6b0938), url("../../assets/images/hero__main__bg.png");
+    background-blend-mode: multiply, color, normal;
+
+    background-position: left;
     background-repeat: no-repeat;
+    background-size: 70% 100%;
+
+    @include bp(tablet) {
+        background-position: right bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 // .rgrid {

@@ -17,7 +17,7 @@ $primary-font-color: #ffffff;
   z-index: 999;
 
   @include bp(desktop) {
-    left: 1%;
+    // left: 1%;
   }
 
   .navbar__sub {
