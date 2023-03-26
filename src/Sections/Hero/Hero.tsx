@@ -18,11 +18,13 @@ function HeroGrid() {
     <>
       <div className="hero__grid__left">
         <span className="sm__text">// THE GREAT RESTART IS HERE</span>
-        <div className="heading__container">
-          <h1 className="heading--1 invento__main__heading">INVENTO’23</h1>
-          <h2 className="heading--2 invento.main__heading">
-            IS AROUND THE CORNER
-          </h2>
+        <div className="heading__container uppercase">
+          <h1 className="heading--1 invento__main__heading">
+            invento’23
+            <span className="d-ib nowrap mt-sm heading--2">
+              is around the corner
+            </span>
+          </h1>
         </div>
         <div className="hero__btn__container">
           {/* TODO: extract these into to a custom btn+link component */}
