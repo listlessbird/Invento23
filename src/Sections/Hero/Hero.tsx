@@ -1,15 +1,16 @@
-import HeroImg from "../../assets/images/hero__main__bg.png"
-import { ReactComponent as InventoLabel } from "../../assets/images/InventoLabel.svg"
-import Countdown from "../../components/countdown"
-import "./Hero.scss"
-import logoOutline from "../../assets/images/gec__image__outline.png"
+import HeroImg from "../../assets/images/hero__main__bg.png";
+import { ReactComponent as InventoLabel } from "../../assets/images/InventoLabel.svg";
+import Countdown from "../../components/countdown";
+import "./Hero.scss";
+import logoOutline from "../../assets/images/gec__image__outline.png";
+import InventoBrochure from "../../assets/pdfs/BROCHURE2023.pdf";
 
 export default function HeroSection() {
   return (
     <section className="section__hero">
       <HeroGrid />
     </section>
-  )
+  );
 }
 
 function HeroGrid() {
@@ -30,7 +31,12 @@ function HeroGrid() {
           <a href="#" className="btn btn--cta glow-on-hover">
             Register
           </a>
-          <a href="#" className="btn btn--explore glow-on-hover">
+          <a
+            className="btn btn--explore glow-on-hover"
+            href={InventoBrochure}
+            download="InventoBrochure"
+            // target="_blank"
+          >
             Explore <span>&rarr;</span>
           </a>
         </div>
@@ -54,5 +60,5 @@ function HeroGrid() {
         </p>
       </div>
     </>
-  )
+  );
 }
