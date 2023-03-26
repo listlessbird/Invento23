@@ -11,14 +11,14 @@ $primary-font-color: #ffffff;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 2%;
-  z-index: 999;
+  // position: absolute;
+  // top: 0;
+  // left: 2%;
+  // z-index: 999;
 
-  @include bp(desktop) {
-    left: 1%;
-  }
+  // @include bp(desktop) {
+  //   left: 1%;
+  // }
 
   .navbar__sub {
     display: flex;
