@@ -222,7 +222,7 @@ a.btn:active {
   font-weight: 700;
   color: currentColor;
   @include bp(desktop) {
-    font-size: var(--max);
+    font-size: clamp(10rem, 6vw, var(--max));
     line-height: 100px;
   }
 }
@@ -233,6 +233,6 @@ a.btn:active {
   font-weight: 600;
   font-size: var(--min);
   @include bp(desktop) {
-    font-size: var(--max);
+    font-size: clamp(7rem, 6vw, var(--max));
   }
 }
