@@ -1,0 +1,78 @@
+@import "../../scss/utils";
+.footer {
+    gap: 2rem;
+    padding: 3rem;
+    align-items: center;
+    background-color: #0a0a0a;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    > * {
+        // outline: 1px solid rebeccapurple;
+    }
+}
+
+.footer__box {
+    &--1 {
+        --flow-space: 3.2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        @include bp(desktop) {
+            padding-left: 7rem;
+        }
+    }
+
+    &--1::after {
+        // should've used a <hr />
+        content: "";
+        position: absolute;
+        margin-top: 2rem;
+        inset: auto 2rem -13% 2rem;
+        padding: 0.2em;
+        background-color: hsl(var(--clr-yellow-accent));
+
+        @media (min-width: 29em) {
+            inset: -12% -7% 0% auto;
+            padding: 0.25em;
+        }
+    }
+}
+
+.footer__box--2 {
+    padding: 2em;
+    display: grid;
+    justify-items: center;
+}
+
+.boxBg {
+    z-index: 1;
+    > * {
+        fill: #161616;
+    }
+}
+
+.footer__col {
+    --gap: 1rem;
+    align-items: center;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #fff;
+    width: 19rem;
+    margin-left: 4rem;
+    margin-block: 3.2rem;
+}
+
+.footer__title__main {
+    line-height: 30px;
+    &:last-child {
+        font-size: 1.5rem;
+        @include bp(desktop) {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.contacts > hr {
+    align-self: center;
+}

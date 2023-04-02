@@ -236,3 +236,14 @@ a.btn:active {
     font-size: clamp(7rem, 6vw, var(--max));
   }
 }
+
+.home {
+  min-height: 100%;
+  display: grid;
+  grid: auto/auto;
+
+  .footer {
+    margin-top: auto;
+    grid-column: -1;
+  }
+}
