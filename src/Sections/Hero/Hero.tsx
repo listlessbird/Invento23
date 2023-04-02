@@ -1,16 +1,16 @@
-import HeroImg from "../../assets/images/hero__main__bg.png";
-import { ReactComponent as InventoLabel } from "../../assets/images/InventoLabel.svg";
-import Countdown from "../../components/countdown";
-import "./Hero.scss";
-import logoOutline from "../../assets/images/gec__image__outline.png";
-import InventoBrochure from "../../assets/pdfs/BROCHURE2023.pdf";
+import HeroImg from "../../assets/images/hero__main__bg.png"
+import { ReactComponent as InventoLabel } from "../../assets/images/InventoLabel.svg"
+import Countdown from "../../components/countdown"
+import "./Hero.scss"
+import logoOutline from "../../assets/images/gec__image__outline.png"
+import InventoBrochure from "../../assets/pdfs/BROCHURE2023.pdf"
 
 export default function HeroSection() {
   return (
     <section className="section__hero">
       <HeroGrid />
     </section>
-  );
+  )
 }
 
 function HeroGrid() {
@@ -21,7 +21,7 @@ function HeroGrid() {
         <div className="heading__container uppercase">
           <h1 className="heading--1 invento__main__heading">
             invento’23
-            <span className="d-ib nowrap mt-sm heading--2">
+            <span className="d-b nowrap mt-sm heading--2">
               is around the corner
             </span>
           </h1>
@@ -60,5 +60,5 @@ function HeroGrid() {
         </p>
       </div>
     </>
-  );
+  )
 }
