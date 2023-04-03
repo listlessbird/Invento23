@@ -9,6 +9,7 @@ import "./Footer.scss"
 export default function Footer() {
   return (
     <footer className="footer grid ff-main flow">
+      <FooterLogo className="footer__bg" />
       <div className="footer__box footer__box--1 flow">
         <div className="footer__col i-flex">
           <InventoLogo className="footer__logo footer__logo--invento" />

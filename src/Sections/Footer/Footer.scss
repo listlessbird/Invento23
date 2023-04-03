@@ -1,17 +1,21 @@
 @import "../../scss/utils";
 .footer {
     gap: 2rem;
-    padding: 3rem;
     align-items: center;
     background-color: #0a0a0a;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     > * {
         // outline: 1px solid rebeccapurple;
     }
+    > &__box {
+        padding: 3rem;
+    }
 }
 
 .footer__box {
     &--1 {
+        grid-row: 1 / 2;
+        grid-column: 1 /2;
         --flow-space: 3.2rem;
         display: grid;
         grid-template-columns: 1fr;
@@ -75,4 +79,13 @@ hr {
 
 .contacts > hr {
     align-self: center;
+}
+
+.footer__bg {
+    justify-self: self-start;
+    grid-row: 1/ 2;
+    grid-column: 1 /2;
+    > * {
+        fill: #161616 !important;
+    }
 }
