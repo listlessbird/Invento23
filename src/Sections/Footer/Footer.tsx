@@ -22,13 +22,17 @@ export default function Footer() {
           <InstagramLogo />
           <div className="link__container">
             <a
-              href="#"
+              href="https://instagram.com/invento_gecpalakkad"
+              rel="noopener noreferrer"
+              target="_blank"
               className="link footer__link d-b fs-200 ff-main fw-large"
             >
               @invento_gecpalakkad
             </a>
             <a
-              href="#"
+              href="https://instagram.com/sapthagecpalakkad"
+              target="_blank"
+              rel="noopener noreferrer"
               className="link footer__link d-b fs-200 ff-main fw-large"
             >
               @sapthagecpalakkad
@@ -41,17 +45,23 @@ export default function Footer() {
         <div className="contacts flex flex-col">
           <div className="mail flow flex flex-col a-center t-center">
             <EmailLogo />
-            <a href="#" className="d-b link footer__link">
+            <a
+              href="mailto:inventogec@gmail.com"
+              className="d-b link footer__link"
+            >
               inventogec@gmail.com
             </a>
-            <a href="#" className="d-b link footer__link">
+            <a
+              href="mailto:invento23marketing@gmail.com"
+              className="d-b link footer__link"
+            >
               invento23marketing@gmail.com
             </a>
           </div>
           <hr />
           <div className="call flow flex flex-col a-center t-center">
             <CallLogo />
-            <a href="#" className="footer__link d-b link">
+            <a href="tel:+919995776023" className="footer__link d-b link">
               +91 99957 76023
             </a>
           </div>
